@@ -1,0 +1,67 @@
+:root {
+    --margin: 2px 6px;
+    --small-text: 10px;
+    --medium-text-size: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 24px;
+}
+.logo > i {
+    color: red;
+    margin: 8px 0px 8px 4px;
+}
+.title {
+    margin: 8px 0px;
+}
+
+.icons {
+    font-size: 18px;
+    margin: 8px 12px;
+}
+
+.player > video {
+    width: 100%;
+    margin: 0px;
+    height: auto;
+}
+
+.hashtags {
+    display: flex;
+    margin: var(--margin);
+}
+.hashtags li {
+    list-style: none;
+    color: rgb(74, 74, 231);
+    margin-right: 4px;
+    font-size: var(--small-text);
+}
+
+.titleAndButton {
+    display: flex;
+    margin: var(--margin);
+}
+.title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: var(--medium-text-size);
+    margin: var(--margin);
+    margin-left: 0;
+}
+
+.views {
+    margin: var(--margin);
+
+    font-size: var(--small-text);
+    color: gray;
+}
